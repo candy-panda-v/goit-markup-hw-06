@@ -381,34 +381,28 @@
       <form>
         <div class="modal">
           <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-          <div class="form-field">
-            <label
-              >Имя
-              <input type="text" />
-            </label>
-          </div>
-          <div class="form-field">
-            <label
-              >Телефон
-              <input type="tel" />
-            </label>
-          </div>
-          <div class="form-field">
-            <label
-              >Почта
-              <input type="email" />
-            </label>
-          </div>
+          <label class="form-field">
+            <input type="text" class="form-input" />
+            <span class="form-label">Имя</span>
+          </label>
+          <label class="form-field">
+            <input type="tel" />
+            <span class="form-label">Телефон</span>
+          </label>
+          <label class="form-field">
+            <input type="email" />
+            <span class="form-label">Почта</span>
+          </label>
           <label>
             <textarea name="comment" class="comment-area"></textarea>
           </label>
-          <div class="agreement">
-            <label
+          <label class="agreement"
+            ><input type="checkbox" />
+            <span
               >Соглашаюсь с рассылкой и принимаю
-              <a href="#" class="agreement-link">Условия договора</a>
-              <input type="checkbox" />
-            </label>
-          </div>
+              <a href="#" class="agreement-link">Условия договора</a></span
+            >
+          </label>
           <button class="button">Отправить</button>
           <button class="button-close" data-modal-close>Close</button>
         </div>

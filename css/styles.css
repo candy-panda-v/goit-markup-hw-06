@@ -480,12 +480,25 @@ footer .container {
   margin: 0px 0px 30px;
 }
 .form-field {
+  position: relative;
+  width: 100%;
   margin-bottom: 28px;
 }
 .form-field input {
+  width: 100%;
   padding: 12px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+}
+.form-label {
+  position: absolute;
+  top: 12px;
+  left: 42px;
 }
 .comment-area {
   width: 448px;
@@ -495,6 +508,9 @@ footer .container {
 }
 .agreement {
   margin-bottom: 30px;
+}
+.agreement-link {
+  color: var(--accent-text-color);
 }
 /* Portfolio-page */
 .buttons {
