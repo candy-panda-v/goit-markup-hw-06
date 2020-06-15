@@ -222,6 +222,10 @@ footer .container {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+.signup-input:hover,
+.signup-input:focus {
+  outline: none;
+}
 
 /* Studio-page */
 /* hero */
@@ -513,7 +517,7 @@ footer .container {
   fill: var(--accent-text-color);
 }
 .form-field:focus-within .form-label {
-  transform: translate(-30px, -32px);
+  transform: translate(-26px, -32px);
   color: var(--accent-text-color);
 }
 .modal-img {
@@ -522,7 +526,7 @@ footer .container {
   left: 16px;
 }
 .form-input:not(:placeholder-shown) + .form-label {
-  transform: translate(-30px, -32px);
+  transform: translate(-26px, -32px);
   color: var(--accent-text-color);
 }
 .form-label {
@@ -540,6 +544,24 @@ footer .container {
 }
 .comment-area:focus-within {
   outline: 2px solid var(--accent-text-color);
+}
+.comment-field {
+  position: relative;
+}
+.comment-field:focus-within .comment-label {
+  transform: translateY(-32px);
+  color: var(--accent-text-color);
+}
+.comment-label {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  color: #757575;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.comment-area:not(:placeholder-shown) + .comment-label {
+  transform: translateY(-32px);
+  color: var(--accent-text-color);
 }
 .agreement {
   display: flex;
@@ -573,6 +595,7 @@ footer .container {
 }
 .agreement-link {
   color: var(--accent-text-color);
+  margin-left: 2px;
 }
 
 /* Portfolio-page */

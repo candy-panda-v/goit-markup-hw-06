@@ -56,55 +56,6 @@
           <button data-modal-open class="button">Заказать услугу</button>
         </div>
       </section>
-      <!-- Backdrop + modal -->
-      <div class="backdrop is-hidden" data-modal>
-        <form>
-          <div class="modal">
-            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-            <label class="form-field">
-              <svg class="modal-img" height="18" width="18">
-                <use href="./images/sprite.svg#person-black"></use>
-              </svg>
-              <input type="text" class="form-input" placeholder=" " />
-              <span class="form-label">Имя</span>
-            </label>
-            <label class="form-field">
-              <svg class="modal-img" height="18" width="18">
-                <use href="./images/sprite.svg#phone-black"></use>
-              </svg>
-              <input type="tel" class="form-input" placeholder=" " />
-              <span class="form-label">Телефон</span>
-            </label>
-            <label class="form-field">
-              <svg class="modal-img" height="18" width="18">
-                <use href="./images/sprite.svg#email-black"></use>
-              </svg>
-              <input type="email" class="form-input" placeholder=" " />
-              <span class="form-label">Почта</span>
-            </label>
-            <label>
-              <textarea
-                name="comment"
-                class="comment-area"
-                placeholder="Комментарий"
-              >
-              </textarea>
-            </label>
-            <label class="agreement"
-              ><input type="checkbox" class="checkbox" />
-              <span class="checkbox-icon"></span>
-              Соглашаюсь с рассылкой и принимаю
-              <a href="#" class="agreement-link">Условия договора</a>
-            </label>
-            <button class="button">Отправить</button>
-            <button class="button-close" data-modal-close>
-              <svg class="" height="18" width="18">
-                <use href="./images/sprite.svg#close-black"></use>
-              </svg>
-            </button>
-          </div>
-        </form>
-      </div>
       <!--Advantages-->
       <h2 class="advabtage-title">Преимущества</h2>
       <section class="section border-bottom">
@@ -498,6 +449,55 @@
         <p>2020 | Developed by GoIT Students</p>
       </div>
     </footer>
+    <!-- Backdrop + modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <form>
+        <div class="modal">
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+          <label class="form-field">
+            <svg class="modal-img" height="18" width="18">
+              <use href="./images/sprite.svg#person-black"></use>
+            </svg>
+            <input type="text" class="form-input" placeholder=" " />
+            <span class="form-label">Имя</span>
+          </label>
+          <label class="form-field">
+            <svg class="modal-img" height="18" width="18">
+              <use href="./images/sprite.svg#phone-black"></use>
+            </svg>
+            <input type="tel" class="form-input" placeholder=" " />
+            <span class="form-label">Телефон</span>
+          </label>
+          <label class="form-field">
+            <svg class="modal-img" height="18" width="18">
+              <use href="./images/sprite.svg#email-black"></use>
+            </svg>
+            <input type="email" class="form-input" placeholder=" " />
+            <span class="form-label">Почта</span>
+          </label>
+          <label class="comment-field">
+            <textarea
+              name="comment"
+              class="comment-area"
+              placeholder=" "
+            ></textarea>
+            <span class="comment-label">Комментарий</span>
+          </label>
+          <label class="agreement"
+            ><input type="checkbox" class="checkbox" />
+            <span class="checkbox-icon"></span>
+            Соглашаюсь с рассылкой и принимаю
+            <a href="#" class="agreement-link">Условия договора</a>
+          </label>
+          <button class="button">Отправить</button>
+          <button class="button-close" data-modal-close>
+            <svg class="" height="18" width="18">
+              <use href="./images/sprite.svg#close-black"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
